@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <h2>A simple system to register, edit, and manage student details.</h2>
+        <h4>A Student Registration System is a digital platform that enables educational institutions
+             to efficiently manage student enrollment processes. It streamlines the registration of students for courses, programs, 
+            or academic sessions by automating data entry, record-keeping, and verification procedures.</h4>
+    </header>
+
+    <div class="container">
+        <!-- Registration Form -->
+        <div class="form-container">
+            <h2>Register Student</h2>
+            <form id="student-form">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" placeholder="Enter student name" required>
+
+                <label for="student-id">Student ID:</label>
+                <input type="number" id="student-id" placeholder="Enter student ID" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+
+                <label for="contact">Contact No:</label>
+                <input type="tel" id="contact" placeholder="Enter contact number" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+
+        <!-- Display Section -->
+<div class="records-container">
+    <h2>Registered Students</h2>
+    <div class="table-container"> <!-- Added div wrapper -->
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be appended here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    </div>
+
+    <script src="script.js">
+      
+          
+    </script>
+</body>
+
+</html>
